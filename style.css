@@ -2,6 +2,7 @@ body {
 	background-image: url(Galaxy.jpg);
 	background-size: cover;
 }
+
 h1 {
 	font-size: 25px;
 	text-transform: capitalize;
@@ -58,7 +59,6 @@ h1 {
 	border-radius: 100px; 
 	display: flex;
 	transition: transform 1s;
-	
 } 
 
 .left_arm { 
@@ -86,22 +86,19 @@ h1 {
 .lower_body { 
 	width: 200px; 
 	height: 200px;
-	/* This is another useful property. Hmm what do you think it does?*/
+	/* This is another useful property.*/
 	margin: 0 auto;
 	display: flex;
-
 } 
 
 .left_leg, .right_leg { 
 	width: 40px; 
 	height: 120px;
 	border-radius: 0 0 100px 100px; 
-	
 } 
 
 .left_leg { 
 	margin-left: 45px; 
-	
 } 
 
 .left_leg:hover {
@@ -128,16 +125,17 @@ h1 {
 	transform-origin: left top;
 	transition: transform 1s;
 	transition-duration: 3s;
-	  
 } 
 
 .left_eye { 
-	/* These properties are new and you haven't encountered
-	in this course. Check out CSS Tricks to see what it does! */
-	position: relative; 
+	position: relative;
+	/*relative: an element’s original position remains in the flow of the document. 
+	Left/right/top/bottom/z-index will work. The positional properties “nudge” the element 
+	from the original position in that direction.*/
 	top: 100px; 
 	left: 40px; 
-} 
+}
+
 .left_eye:hover {
 	transform: rotate(1080deg);
 }
@@ -147,6 +145,7 @@ h1 {
 	top: 80px; 
 	left: 140px; 
 }
+
 .right_eye:hover {
 	transform: rotate(1080deg);
 }
